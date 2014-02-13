@@ -1,6 +1,6 @@
 Feature 1
 
-ef Aktueller_Warenkorb(historie)
+def Aktueller_Warenkorb(historie)
 
     var warenkorb = new Warenkorb()
 
