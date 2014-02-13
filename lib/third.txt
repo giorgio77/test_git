@@ -1,0 +1,25 @@
+Feature 1
+
+ef Produkt_aus_Warenkorb_entfernen(historie, produkt_id, menge, ...)
+    
+    var delta = []
+    
+    precondition(menge>0)
+
+    var vorhandene_menge = Aktueller_Warenkorb(historie+delta)
+                             .Produkte[produkt_id]
+
+    var zu_entfernen = minimum( menge, vorhandene_menge )
+    
+    if zu_entfernen>0 then
+ 
+        delta.add(Kunde_entfernte_Produkt_aus_Warenkorb(zu_entfernen, ...))
+        if Warenkorb_ist_leer( historie+delta ) then 
+            delta.add ( Kunde_hat_Warenkorb_geleert(...) )
+        end
+    
+    end
+
+    return delta
+
+end
