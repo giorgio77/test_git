@@ -1,6 +1,6 @@
 Feature 1
 
-ef Produkt_aus_Warenkorb_entfernen(historie, produkt_id, menge, ...)
+def Produkt_aus_Warenkorb_entfernen(historie, produkt_id, menge, ...)
     
     var delta = []
     
