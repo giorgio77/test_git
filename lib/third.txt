@@ -1,4 +1,4 @@
-Feature 1
+Feature 3
 
 def Produkt_aus_Warenkorb_entfernen(historie, produkt_id, menge, ...)
     
@@ -6,6 +6,7 @@ def Produkt_aus_Warenkorb_entfernen(historie, produkt_id, menge, ...)
     
     precondition(menge>0)
 
+new Line
     var vorhandene_menge = Aktueller_Warenkorb(historie+delta)
                              .Produkte[produkt_id]
 
