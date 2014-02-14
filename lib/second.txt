@@ -3,7 +3,7 @@ Feature 1
 def Aktueller_Warenkorb(historie)
 
     var warenkorb = new Warenkorb()
-
+new Line
     historie.foreach (event) ->
 
         | Kunde_fügte_Produkt_zu_Warenkorb_hinzu => 
